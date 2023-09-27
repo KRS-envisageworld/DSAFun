@@ -15,3 +15,7 @@ function findLongestSubstring(str) {
   }
   return longest;
 }
+findLongestSubstring('rithmschool') // 7
+findLongestSubstring('thisisawesome') // 6
+findLongestSubstring('thecatinthehat') // 7
+findLongestSubstring('bbbbbb') // 1
