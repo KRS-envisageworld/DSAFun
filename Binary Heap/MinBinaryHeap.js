@@ -1,3 +1,8 @@
+// In MaxBinaryHeap parent should be greater than child. 
+// Always fill left node first and then fill right,
+// parent's left child is 2n+1
+// parent's right child is 2n+2
+// First push element to the array and then bubble up it to the correct node
 class MinBinaryHeap {
     constructor() {
       this.values = [];
