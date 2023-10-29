@@ -29,11 +29,7 @@ class PriorityQueue {
       }
       return this.values;
     }
-    swap(arr, source, destination) {
-      var temp = arr[source];
-      arr[source] = arr[destination];
-      arr[destination] = temp;
-    }
+ 
     ExtractMin() {
       let min = this.values[0];
       let endValue = this.values.pop();

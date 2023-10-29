@@ -27,11 +27,7 @@ class MaxBinaryHeap {
     }
     return this.values;
   }
-  swap(arr, source, destination) {
-    var temp = arr[source];
-    arr[source] = arr[destination];
-    arr[destination] = temp;
-  }
+
   ExtractMax() {
     let max = this.values[0];
     let endValue = this.values.pop();
@@ -42,7 +38,7 @@ class MaxBinaryHeap {
     return max;
   }
 
-  BubblingDown() {
+  BubblingDown() {W
     let idx = 0;
     const element = this.values[idx];
     const originalArrayLen = this.values.length;
@@ -100,3 +96,18 @@ console.log(maxHeap.ExtractMax());
 console.log(maxHeap.ExtractMax());
 console.log(maxHeap.ExtractMax());
 console.log(maxHeap.values);
+
+
+
+
+var pq = new PriorityQueue();
+pq.Insert(2);
+pq.Insert(1);
+pq.Insert(5);
+pq.Insert(8);
+pq.Insert(4);
+pq.Insert(9);
+pq.Insert(10);
+
+pq.Dequeue();
+
